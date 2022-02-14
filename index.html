@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript-Intro</title>
+<style>
+    .navbar{
+        display: flex;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html{
+        background-color: black;
+    }
+   h1
+   {
+       font-size: 3rem;
+       color: white;
+
+   }
+    .container{
+        background-image: url(/circle2.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20px;
+    }
+    .navbar{
+        display: flex;
+        align-items: center;
+    }
+    .menu{
+        /* display: flex;
+        text-decoration: none;
+        color: white;
+        width: 40px;
+        cursor: pointer; 
+        margin-left: 40px;   */
+        flex: 1;
+        text-align: right; 
+    }
+    .menu ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+    .menu ul li a{
+        text-decoration: none;
+        color: white;
+        font-size: 13px;
+    }
+    .text-box{
+        width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+    
+</style>
+</head>
+<body>
+    <section class="container">
+        <div class="navbar">
+            
+            <a href=""><img src="/logo.png" alt="" width="50"></a> 
+            <div class="menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <button>Sign Up</button>
+                </ul>
+            </div>
+        </div>
+        <div class ="text-box">
+            <h1>Welcome to Javascript</h1>
+        </div>
+    </section>
+    <!-- <script>
+        let num1 =  50; 
+        num2 = 50;
+        let answer = '2500';
+        let info = prompt (`calculate $num * $num`, 'Your answer here');
+        if (info === answer)
+        alert('You passed the exam');
+        else {
+            alert('olodo oshi');
+        }
+      </script> -->
+      <script>
+        let isConfirm= confirm('are we all listening')
+    
+    if (isConfirm ===true)
+{
+    alert('Welcome to Javascript');
+} else 
+{
+    alert('una no dey try oh');
+} 
+    </script>
+    
+</body>
+</html>
